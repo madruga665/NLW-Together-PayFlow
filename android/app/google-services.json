@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "114494868966",
+    "project_id": "madruga665-pay-flow",
+    "storage_bucket": "madruga665-pay-flow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114494868966:android:d5d6f29958724256dcda27",
+        "android_client_info": {
+          "package_name": "com.example.payflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114494868966-9osem0k644po7lv50kvgitqcjtfua1e8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.payflow",
+            "certificate_hash": "83298477ddda1d64728541ae7917ccab0c2691ea"
+          }
+        },
+        {
+          "client_id": "114494868966-dtg4luf8lseatr85kjb34fmubjg1bnh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvjMwoSV7qVcVlds9vxX1WkfWFaQGxD3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114494868966-dtg4luf8lseatr85kjb34fmubjg1bnh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
