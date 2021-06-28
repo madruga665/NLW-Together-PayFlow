@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:payflow/shared/themes/app_colors.dart';
 import 'package:payflow/shared/themes/app_text_styles.dart';
-import 'package:payflow/shared/widgets/set_label_button/set_label_button.dart';
+import 'package:payflow/shared/widgets/set_label_buttons/set_label_buttons.dart';
 
 class BottomSheetWidget extends StatelessWidget {
   final String primaryLabel;
@@ -10,15 +11,15 @@ class BottomSheetWidget extends StatelessWidget {
   final VoidCallback secondaryOnPressed;
   final String title;
   final String subtitle;
-  const BottomSheetWidget(
-      {Key? key,
-      required this.primaryLabel,
-      required this.primaryOnPressed,
-      required this.secondaryLabel,
-      required this.secondaryOnPressed,
-      required this.title,
-      required this.subtitle})
-      : super(key: key);
+  const BottomSheetWidget({
+    Key? key,
+    required this.primaryLabel,
+    required this.primaryOnPressed,
+    required this.secondaryLabel,
+    required this.secondaryOnPressed,
+    required this.title,
+    required this.subtitle,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -44,8 +45,9 @@ class BottomSheetWidget extends StatelessWidget {
                             style: AppTextStyles.buttonBoldHeading,
                             children: [
                               TextSpan(
-                                  text: "\n$subtitle",
-                                  style: AppTextStyles.buttonHeading)
+                                text: "\n$subtitle",
+                                style: AppTextStyles.buttonHeading,
+                              ),
                             ]),
                         textAlign: TextAlign.center,
                       ),
@@ -59,7 +61,8 @@ class BottomSheetWidget extends StatelessWidget {
                         primaryLabel: primaryLabel,
                         primaryOnPressed: primaryOnPressed,
                         secondaryLabel: secondaryLabel,
-                        secondaryOnPressed: secondaryOnPressed)
+                        secondaryOnPressed: secondaryOnPressed),
+                    SizedBox(height: 2),
                   ],
                 ),
               ],
